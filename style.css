@@ -1,0 +1,27 @@
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.header-logo img {
+  width: 200px;
+  height: auto;
+}
+.header-links {
+}
+#shoppingCart {
+  width: 30%;
+  position: fixed;
+  right: 0;
+  top: 205px;
+  bottom: 0;
+  box-shadow: -2px 1px 17px 5px rgb(199 199 199 / 43%);
+  background-color: white;
+  transition: all 225ms ease-in-out;
+}
