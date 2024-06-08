@@ -3,6 +3,6 @@ window.onscroll = function() {
     if(window.scrollY > 0) {
         shoppingCart.style = 'top: 0';
     } else {
-        shoppingCart.style = 'top: 205px';
+        shoppingCart.style = 'top: 100px';
     }
 }
