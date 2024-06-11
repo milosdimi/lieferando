@@ -12,25 +12,158 @@
     <header>
       <div class="header-logo">
         <a href="./index.html">
-          <img src="./img/bedlando_logo.png" alt="Logo"/>
+          <img src="./img/bedlando_logo.png" alt="Logo" />
         </a>
       </div>
-      <div class="header-links">
-        <a href="#">Test1</a>
-        <a href="#">Test2</a>
-        <a href="#">Test3</a>
-        <a href="#">Test4</a>
+      <h2>Spezialitäten</h2>
+      <div class="phone-button">
+        <div class="header-links">
+          <a href="#">Test1</a>
+          <a href="#">Test2</a>
+        </div>
+        <a href="tel:+436641234567">
+          <img src="./img/phone.png" alt="" />+436641234567
+        </a>
+      </div>
+      <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="burger-links" id="burger-links">
+          <a href="#">Test1</a>
+          <a href="#">Test2</a>
+        </div>
       </div>
     </header>
 
-    <div class="content">
+    <main class="section-main">
       <div class="left">
         <!-- Content goes here -->
+        <div class="titelpic">
+          <img src="./img/title.jpg" alt="" />
+        </div>
+        <div class="restaurant-info">
+          <div class="info-restaurant d-flex">
+            <div class="restaurant-logo">
+              <img src="./img/restaurant-logo.jpeg" alt="" />
+            </div>
+            <div class="rest-info d-flex">
+              <h1>Breaking Restaurant</h1>
+              <div class="info-icon">
+                <img src="./img/info.png" alt="info icon" />
+              </div>
+              <div class="like-icon">
+                <img src="./img/heart.png" alt="like icon" />
+              </div>
+            </div>
+            <div class="stars d-flex">
+              <img src="./img/star.png" alt="">
+              <img src="./img/star.png" alt="">
+              <img src="./img/star.png" alt="">
+              <img src="./img/star.png" alt="">
+              <img src="./img/star-blank.png" alt="">
+              <a href="#">856 Bewertungen</a>
+            </div>
+            <div id="location" class="location d-flex d-none">
+              <img src="./img/placeholder.png" alt="">
+              <a href="#">3828 Piermont Drive in Albuquerque, New Mexico</a>
+            </div>
+            <div id="deliveryCost" class="deliveryicon d-flex">
+              <img src="./img/shopping-bag.png" alt="">
+              <a href="#">Min. 16.00 €</a>
+              <img src="./img/new-moon.png" alt="">
+              <img src="./img/bicycle.png" alt="">
+              <a href="#">6.00 €</a>
+            </div>
+          </div>
+        </div>
+        <div id="search" class="search-nav">
+          <div class="search-bar d-flex">
+            <div class="search-icon">
+              <img src="./img/magnifying-glass.png" alt="">
+            </div>
+            <a href="#">Pasta</a>
+            <a href="#">Burger</a>
+            <a href="#">Pizza</a>
+          </div>
+        </div>
+
+        <div class="content-main d-flex">
+          <div id="content" class="main-content-con">
+            <div id="searchLink0" class="food-img">
+              <img src="./img/burger.jpeg" alt="">
+            </div>
+            <h2 class="title-food">Burger</h2>
+            <div class="card-food d-flex">
+              <div class="food-title d-flex">
+                <h3>Burger Heisenberg</h3>
+                <div class="icon-info">
+                  <img src="./img/info1.png" alt="">
+                </div>
+              </div>
+              <h4>Hamburgerfleisch, Tomaten,Salat, Zwiebeln und saure Gurken</h4>
+              <h3>8.30 €</h3>
+              <button onclick="addToBasket(0,0)" class="add-basket-btn">
+                <img src="./img/plus.png" alt="">
+              </button>
+            </div>
+            <div class="card-food d-flex">
+              <div class="food-title d-flex">
+                <h3>Burger Jeassi</h3>
+                <div class="icon-info">
+                  <img src="./img/info1.png" alt="">
+                </div>
+              </div>
+              <h4>Hamburgerfleisch, Tomaten,Salat, Oliven und Spek</h4>
+              <h3>9.50 €</h3>
+              <button onclick="addToBasket(0,1)" class="add-basket-btn">
+                <img src="./img/plus.png" alt="">
+              </button>
+            </div>
+            <div class="card-food d-flex">
+              <div class="food-title d-flex">
+                <h3>Burger Salamaka</h3>
+                <div class="icon-info">
+                  <img src="./img/info1.png" alt="">
+                </div>
+              </div>
+              <h4>Hamburgerfleisch, Tomaten,Salat, Mozzarela und Rostige Paprika</h4>
+              <h3>7.50 €</h3>
+              <button onclick="addToBasket(0,2)" class="add-basket-btn">
+                <img src="./img/plus.png" alt="">
+              </button>
+            </div>
+            <div class="card-food d-flex">
+              <div class="food-title d-flex">
+                <h3>Burger Soll</h3>
+                <div class="icon-info">
+                  <img src="./img/info1.png" alt="">
+                </div>
+              </div>
+              <h4>Hamburgerfleisch, Tomaten,Salat, Käse und Chili</h4>
+              <h3>10.40 €</h3>
+              <button onclick="addToBasket(0,3)" class="add-basket-btn">
+                <img src="./img/plus.png" alt="">
+              </button>
+            </div>
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
       </div>
       <div id="shoppingCart">
-        <h2>Einkaufwagen</h2>
+        <h3>Warenkorb</h3>
       </div>
-    </div>
+    </main>
 
     <footer>
       <div class="footer-content">

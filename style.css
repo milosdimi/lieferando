@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: white;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -12,18 +12,25 @@ header {
   height: 100px;
   box-shadow: 0 5px 13px 2px #c2c2c2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: orange;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 .header-logo img {
-  height: 100px;
+  height: 90px;
   border-radius: 10px;
 }
 
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header-links a {
-  margin-right: 20px;
+  margin-right: 8px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -32,20 +39,263 @@ header {
 }
 
 .header-links a:hover {
-  color: #ff5722;
+  color: #3a3a3a;
 }
 
-.content {
+.phone-button a:hover {
+  color: #3a3a3a;
+}
+
+.phone-button {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.phone-button a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  background-color: #ff8100;
+  border-radius: 5px;
+  border: 2px solid rgb(58, 58, 58);
+  padding: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.phone-button img {
+  width: 17px;
+  height: auto;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.burger-links {
+  display: none;
+  flex-direction: column;
+}
+
+.burger-links a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.section-main {
   display: flex;
   flex: 1;
 }
+.titelpic {
+  height: 400px;
+  position: relative;
+  width: 100%;
+}
+.titelpic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+.restaurant-info {
+  width: 100%;
+  flex-direction: column;
+  display: inline-flex;
+  align-items: center;
+}
+.info-restaurant {
+  padding: 40px 16px 24px 16px;
+  flex-direction: column;
+  position: relative;
+  max-width: 960px;
+  width: 100%;
+}
+.restaurant-logo {
+  height: 72px;
+  width: 72px;
+  position: absolute;
+  top: -55px;
+  left: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.restaurant-logo img {
+  height: 100%;
+  width: 100%;
+  scale: 1.25;
+}
+.rest-info {
+  align-items: center;
+}
+.info-icon {
+  padding: 6px;
 
-.left {
-  height: 5000px;
-  width: 70%;
-  background-color: cornflowerblue;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: auto;
+}
+.like-icon {
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+.stars {
+  align-items: center;
+  gap: 4px;
+  margin-top: 24px;
+}
+.stars a {
+  margin-left: 8px;
+}
+.location {
+  align-items: center;
+  margin-top: 24px;
+  gap: 4px;
+}
+.location a {
+  text-decoration: none;
+  cursor: default;
+}
+.deliveryicon {
+  align-items: center;
+  margin-top: 24px;
+  gap: 4px;
+}
+.deliveryicon img:nth-of-type(2) {
+  margin: 0 8px 0 8px;
+}
+.search-nav {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 8px 0 8px 0;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.20);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  transition: z-index 0.01s ease-in-out;
+  z-index: 0;
+}
+.search-bar {
+  padding: 0 16px 0 16px;
+  gap: 8px;
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+}
+.search-bar a {
+  text-decoration: none;
+  background-color: #efedea;
+  padding: 8px 16px 8px 16px;
+  border-radius: 50px;
+}
+.search-icon {
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.content-main {
+  justify-content: center;
+}
+.main-content-con {
+  max-width: 960px;
+  width: 100%;
+  padding: 0 16px 0 16px;
+  margin-top: 32px;
+}
+.food-img {
+  height: 295px;
+}
+.food-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 12px;
+}
+.title-food {
+  margin: 16px 16px 16px 16px;
+}
+.card-food {
+  height: 120px;
+  border-radius: 12px;
+  padding: 16px 64px 16px 16px;
+  position: relative;
+  box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.food-title {
+  align-items: center;
+  gap: 8px;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+  color: #858585;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+.add-basket-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left {
+  height: 4000px;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 #shoppingCart {
   width: 30%;
   height: 100vh;
@@ -74,7 +324,8 @@ footer {
   flex-wrap: wrap;
 }
 
-.contact-info, .footer-links {
+.contact-info,
+.footer-links {
   margin: 10px;
 }
 
@@ -106,4 +357,74 @@ footer {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+@media (max-width: 790px) {
+  .header-links {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-links {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    padding: 10px 0;
+  }
+  .header-logo img {
+    height: 70px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 571px) {
+  .header-links {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-links {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    padding: 10px 0;
+  }
+  .header-logo img {
+    height: 50px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo img {
+    height: 46px;
+  }
+
+  .phone-button a {
+    font-size: 14px;
+    padding: 4px;
+  }
+  header {
+    display: flex;
+    padding: 8px 0px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
