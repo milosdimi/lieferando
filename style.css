@@ -124,7 +124,7 @@ header {
   display: inline-flex;
   justify-content: center;
   padding: 8px 0 8px 0;
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.20);
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   background-color: white;
@@ -232,20 +232,30 @@ button {
 }
 .close-menu {
   position: absolute;
-    top: 16px;
-    right: 16px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
+  top: 16px;
+  right: 16px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-
-
-
-
-
+.pickup {
+  margin: 20px 16px 20px 16px;
+  padding: 4px;
+  border-radius: 50px;
+  background-color: #858585;
+}
+.delivery-btn {
+  padding: 16px 40px 16px 40px;
+  border-radius: 50px;
+}
+.active-btn {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.pickup-btn {
+  padding: 16px 40px 16px 40px;
+  border-radius: 50px;
+}
 
 
 
