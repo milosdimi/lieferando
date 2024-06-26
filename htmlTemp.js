@@ -173,11 +173,9 @@ function generateFilledBasketHtml(
 function generateBasketInfoHtml() {
   return /*html*/ `
     <div class="empty-basket d-flex">
-        <img class="basket-icon" src="./img/icons/cart-shopping-solid.svg" alt="">
-        <h2 class="margin-bottom-12px">Fülle deinen Warenkorb</h2>
-        <h4 class="basket-text">Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein
-            Essen.
-        </h4>
+        <img class="basket-icon" src="./img/shopping.png" alt="">
+        <h2 class="margin-bottom-12px">Lege Artikel <br> deinen Warenkorb</h2>
+        <h4 class="basket-text">Wähle einige köstliche Gerichte aus unserer Speisekarte und bestelle dein Essen.</h4>
     </div>
         `;
 }

@@ -151,7 +151,7 @@ function generateBasketItems() {
 }
 
 function renderResponsiveBasketButton() {
-  let deliveryFee = twoDecimals(5.0);
+  let deliveryFee = twoDecimals(6.0);
   let subTotalPrice = calcTotalBasketPrice();
   let totalPrice = twoDecimals(+subTotalPrice + +deliveryFee);
   let totalPricenoDelivery = twoDecimals(+subTotalPrice);
@@ -171,7 +171,7 @@ function generateResponsiveBasketButton(
   totalPrice,
   totalPricenoDelivery
 ) {
-  if (subTotalPrice < 15) {
+  if (subTotalPrice < 18) {
     return responsiveBasketButtonNoDeliveryHtml(totalPricenoDelivery);
   }
   if (pickUpButtonActive()) {
@@ -192,12 +192,12 @@ function generatePickUpOrder() {
 }
 
 function generateMinimumOrderOrCheckout() {
-  let deliveryFee = twoDecimals(5.0);
+  let deliveryFee = twoDecimals(6.0);
   let subTotalPrice = calcTotalBasketPrice();
   let minimumOrderValue = calcMinimumValueOrder();
   let totalPrice = twoDecimals(+subTotalPrice + +deliveryFee);
 
-  if (subTotalPrice < 15) {
+  if (subTotalPrice < 18) {
     return generateMinimumOrderValueHtml(minimumOrderValue, subTotalPrice);
   } else {
     return generateCheckoutHtml(deliveryFee, subTotalPrice, totalPrice);
@@ -276,7 +276,7 @@ function calcTotalBasketPrice() {
 
 function calcMinimumValueOrder() {
   let subTotal = calcTotalBasketPrice();
-  let minimumOrderValue = +15;
+  let minimumOrderValue = +18;
   let remainingSum = minimumOrderValue - subTotal;
   return twoDecimals(remainingSum);
 }
@@ -293,8 +293,8 @@ function sendOrder() {
   renderResponsiveBasketButton();
 }
 
-function twoDecimals(number) {
-  return number.toFixed(2);
+function twoDecimals(price) {
+  return price.toFixed(2);
 }
 
 //change style//
