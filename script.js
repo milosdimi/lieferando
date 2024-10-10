@@ -204,7 +204,6 @@ function generateMinimumOrderOrCheckout() {
   }
 }
 
-// basket array PART //
 
 function addToBasket(i, j) {
   let dish = foodMenu[i].dishes[j];
@@ -297,7 +296,6 @@ function twoDecimals(price) {
   return price.toFixed(2);
 }
 
-//change style//
 
 window.onscroll = function () {
   let navContainer = document.getElementById("navContainer");
