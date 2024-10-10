@@ -74,7 +74,7 @@ let foodMenu = [
       },
       {
         name: "Pasta Salamanka",
-        ingredients: "Gnochi mit Gorgonzolasauce",
+        ingredients: "Gnochi mit Gorgonzolasauce, Büffel Mozzarella",
         price: twoDecimals(12.9),
       },
       {
